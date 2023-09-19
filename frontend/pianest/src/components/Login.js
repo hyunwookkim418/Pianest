@@ -1,16 +1,13 @@
 import React from 'react'
 export default function Login() {
 
- const Sumbit = ()=>{
-
-  
-
+ const Submit = ()=>{
 
 
  }
   return (
     <div>
-       <form onSubmit={()=>alert("submiited")}>
+       <form onSubmit={()=>alert("submitted")}>
         <div>
         <label>Username of Email : </label>
         <input type="email" />
