@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.event-calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calendar-wrapper {
+  margin-top: 20px;
+}
+
+.events-container {
+  margin-top: 20px;
+  width: 300px;
+  max-width: 80%;
+  z-index: 100;
+}
+
+
+
+
+.event-calendar {
+  text-align: center;
+  margin: 20px;
+  z-index: 99;
+ 
+}
+
+.event-form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+}
+
+.delete-btn {
+  margin-left: 10px;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.event-item {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  gap:1%;
+  background-color: #5bc0de;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.admin-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-center {
+  text-align: center;
+}

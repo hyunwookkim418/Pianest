@@ -1,11 +1,17 @@
 'use strict';
 
+var cors=require('cors')
+console.log("cors",cors)
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 4000,
 
 
   User = require('./api/models/userModel'),
+  Admin = require('./api/models/adminModel'),
+  Event = require('./api/models/eventModel'),
+
+
   bodyParser = require('body-parser'),
   jsonwebtoken = require("jsonwebtoken");
 
@@ -24,7 +30,7 @@ mongoose.connect('mongodb+srv://Pianest:tlzmflt12!@pianest.5bgdcr6.mongodb.net/?
     //err handle
     console.log("err",err)
 });
-
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -34,6 +40,8 @@ routes(app);
 app.use(function(req, res) {
   res.status(404).send({ url: req.originalUrl + ' not found' })
 });
+
+
 
 app.listen(port);
 
