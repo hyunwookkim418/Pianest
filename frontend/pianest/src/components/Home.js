@@ -22,6 +22,7 @@ export default function Home() {
             </li>
             <li class="nav-item">
                 <a class="nav-link" ><Link to={'calendar'}>Calendar</Link></a>
+               
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#logout">
@@ -38,7 +39,10 @@ export default function Home() {
             <h2>Welcome to Your Piano School</h2>
             <p>Learn to play the piano with our expert instructors. Whether you are a beginner or an advanced player, we have lessons tailored to your skill level.</p>
             <p>Our lessons cover various genres, techniques, and styles. Join us and embark on a musical journey with the piano.</p>
-            <a href="#lessons" class="btn btn-primary">Explore Lessons</a>
+            <a href="#lessons" class="btn btn-primary">Explore Lessons</a> <br/> <br/>
+            
+            <a href="mailto:hwkim418@gmail.com" target="_blank" class="btn btn-primary" >hwkim418@gmail.com </a>
+
         </div>
         <div class="col-md-6">
           <br/>
